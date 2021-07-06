@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Cela</title>
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <header>
+<body id="home">
+    <header class="header-main">
         <nav>
-            <ul class="nav-main">
-                <li>Home</li>
-                <li class="nav">Portfolio</li>
-                <li class="nav">About</li>
-                <li class="nav">Connect</li>
+            <ul class="nav">
+                <li class="nav-main"> <a href="#home">Home</a></li>
+                <li class="nav-main"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-main"><a href="#about">About</a></li>
+                <li class="nav-main"><a href="#connect">Connect</a></li>
             </ul>
         </nav>
     </header>
-    <main> 
-        <img src="assets/images/Jeff_illustration.jpg" alt="Illustration of Jeff Cela">
-        <!-- Add custom CSS style for h3 -->
-        <h3> Hi, I'm Jeff!</h3>
-        <!-- Add a custom CSS style for h2 -->
-        <h2> Curator of Design, Code, and Photography.</h2>
-        <!-- Finish the language that will be on the page, not it 
-        will only span the first 50% of the page. -->
-        <p> I am a Jersey Boy who has found a home in the south, 
-            graphic & web design is my specialty, people are my inspiration, 
-            and passion is my fuel. 
-        </p>
+    <main class="flex-container">
+        <section class="main-content">  
+            <img src="assets/images/Jeff_illustration.jpg" alt="Illustration of Jeff Cela">
+        </section>
+        <aside class="right">
+            <h3 class="two-col"> Hi, I'm Jeff!</h3>
+            <h2> Curator of Design, Code, and Photography.</h2>
+            <p> I am a Jersey Boy who has found a home in the south, 
+                graphic & web design is my specialty, people are my inspiration, 
+                and passion is my fuel. 
+            </p>
+        </aside>  
     </main>
 
-    <section>
+    <section class="quotes">
         <p>"Success is never owned, it is rented and rent is due everyday." <i>R.Vaden</i></p>
     </section>
 
     <article> 
         <header>
-            <h1>Portfolio</h1>
+            <h2 id="portfolio">Portfolio</h2>
         </header>
         <menu>
             <ul>
@@ -63,28 +63,49 @@
 
     </article>
 
-    <section>
-        <p>"The greatest glory in licing lies not in never falling, but in rising every time we fall" <i>N.Mandela</i></p>
+    <section class="quotes">
+        <p>"The greatest glory in living lies not in never falling, but in rising every time we fall" <i>N.Mandela</i></p>
     </section>
 
     <article> 
-        <header>
-            <h1>About</h1>
+        <header id="#about">
+            <h2>About</h2>
         </header>
-
-        <p>I'm a Savannah College of Art and Design graduate with over 8 years of industry experience. 
-            With my ability to self-start, self teach, and problem solve I bring a unique perspective to creative enviorments.
-            Education is a continuous process and I am always looking to develop or refine noew or existing skills.
-        </p>
-        <img src="assets/images/Luna_shoulders.jpg" alt="Jeff and Luna his dog">
+        <section class="about-container">
+            <section class="Luna-Jeff">
+                <img id="about-image" src="assets/images/Luna_Jeff.jpg" alt="Jeff and Luna his dog">
+            </section>
+            <section class="about-right">
+                <h3>Who I am.</h3>
+                <p>I have over 8 years of experience producing a wide range of digital and print media projects. I specialize in brand identity, 
+                  photography, frontend development, and account management.
+                </p>
+                <p>
+                  Bridging the gap between creatives and clients allows me to translate communications in both directions. My experience and
+                  skillset allows me to bring a unqiue perspective to creative enviorments. I can paint a picture for CEO's or get my hands dirty and 
+                  produce the work myself. 
+                </p>
+                <h4>Recommendations</h4>
+                <p>
+                    "I worked very closely with Jeff, Creative Director, GM at the time for the Midtown studio, first Atlanta location through my focus 
+                    in business development, sales, marketing, building partnerships and alliances. Jeff trained me on print and graphic design in 
+                    Savannah in January, 2015 and when the Atlanta studio opened in July through the end of my engagement in September. We worked 
+                    collaboratively with prospective clients and opportunities I brought to Jeff and team, whether corporate, entrepreneurial, 
+                    non-profit or university. Jeff is a strategic and tactical thinker; creative in both the art form; and, with written word and 
+                    concepts; is fast on his feet both in thinking, "outside the box" and "in the box" where necessary. He's a chameleon and can 
+                    work with all kinds of people in many different situations always making the client as best he could, feel special and valued." 
+                    <br> <i>- Deborah Schwartz Griffin</i>
+                  </p>
+            </section>
+        </section>
     </article>
 
-    <section>
+    <section class="quotes">
         <p>"Bowties are cool" <i>Doctor Who</i></p>
     </section>
 
     <article>
-        <h1> Let's Connect</h1>
+        <h1 id="connect"> Let's Connect</h1>
 
         <form class="form-inline">
             <label for="name">Name:</label>
@@ -96,13 +117,18 @@
     </article>
 
     <footer>
-        <p>&copy; 2021 Designed by Jeff Cela</p>
-       <!-- Below need to be icons, position to the right of the centered footer text with copyright info -->
         <ul>
-            <li>GitHub</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
+            <ui>
+               <a  href="https://github.com/jeffcela" target="_blank"><img class="footer-icon" src="assets/images/github_icon.png" alt="Github"></a> 
+            </ui>
+            <ui>
+               <a href="https://www.instagram.com/jeffcela/?hl=en" target="_blank"><img class="footer-icon" src="assets/images/instagram_icon.png" alt="Instagram"></a>
+            </ui>
+            <ui>
+                <a href="https://www.linkedin.com/in/jeffcela/" target="_blank"><img class="footer-icon" src="assets/images/linkedin_icon.png" alt="Linkedin"></a>
+            </ui>
         </ul>
+        <p>&copy; 2021 Designed by Jeff Cela</p>
     </footer>
 
 </body>

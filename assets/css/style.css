@@ -1,133 +1,142 @@
 * {
-    font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-header {
-    width: 100%;
-    background: black;
-    border-bottom: 5px solid rgb(214, 214, 214);
-    text-align: right;
-    color: white;
-    padding: 15px 10px 10px 10px;
+
+body {
+  font-family: 'Oswald', sans-serif;
 }
-    
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+/* This is for the header and navigation for the page */
+main {
+  height: 746px;
+}
+
+.header-main {
+  background-color: black;
+  color: white;
+  border-bottom: 5px solid rgb(214, 214, 214);
+  width: 100%;
+  position: fixed;
+} 
+
 .nav {
-    list-style-type: none;
-    font-size: 14px;
-    display: inline;
-    padding-inline: 10px;
-    
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+  list-style: none;
 }
 
-#Bio {
-    height: 400px;
-    float: left;
-    margin-right: 55px;
-    padding-top: 30px;
-    padding-left: 25px;
-
-}   
-
-#hi {
-    color: black;
-    font-size: 35px;
-    text-align: left; 
-    padding-top: 85px;
-}
-
-#about {
-    color: black;
-    font-size: 20px;
-    text-align: left; 
-    padding-top: 20px;
-    padding-bottom: 20px;
+.nav-main {
+  margin: 18px;
+  font-size: 15px;
 }
 
 
+/* This starts the styling for the main elements, this is a 2 column flex box */
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content{
+  flex: 1;
+  margin: 125px 25px 100px 50px;
+  text-align: right;
+}
+
+.right {
+  flex: 2;
+}
+
+
+/* Styleing for H2, H3, P */
+
+h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  padding-bottom: 12px;
+  padding-top: 20px;
+}
 p {
-    color: black;
-    text-align: left;
-    line-height: 20px;
+  font-size: 15px;
+  padding-bottom: 5px;
+  line-height: 20px;
 }
 
-.Contact {
-    height: 50px;
-    width: 100px;
-    background-color: white;
-    border: 1px solid black;
-    position: initial;
-    padding-left: 200px;
+.page-header {
+  text-align: center;
+}
+/* This is the style for all of the quotes that break up the page */
+.quotes {
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: white;
+  background-color: black;
+}
+/* Main project gallery */
+
+
+
+
+/* About */
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style the form - display items horizontally */
-.form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-  
-  /* Add some margins for each label */
-  .form-inline label {
-    margin: 5px 10px 5px 0;
-  }
-  
-  /* Style the input fields */
-  .form-inline input {
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  /* Style the submit button */
-  .form-inline button {
-    padding: 10px 20px;
-    background-color: black;
-    border: 1px solid #ddd;
-    color: white;
-    border-radius: 5px; 
-  }
-  
-  .form-inline button:hover {
-    background-color: grey;
-  }
-  
-  @media (max-width: 800px) {
-    .form-inline input {
-      margin: 10px 0;
-    }
-  
-    .form-inline {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  }
-  .rule {
-    margin: auto;
-    border-top: 1px solid grey;
-    width: 75%;
-    margin-top: 150px;
-  }
+.Luna-Jeff{
+  flex: 1;
+  margin: 125px 25px 100px 50px;
+  text-align: right;
+}
 
-  #quote{
-      padding-top: 20px;
-      text-align: center;
+.about-right {
+  flex: 2;
+  margin: 0px 200px 0px 20px;
+}
 
-  }
+#about-image {
+  width: 350px;
+}
 
+/* Footer Style */
+  
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background: black;
-    border-top: 5px solid rgb(214, 214, 214);
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    padding-top: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer-icon {
+  width: 30px;
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
 }
