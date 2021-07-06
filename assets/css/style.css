@@ -13,10 +13,11 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
  }
 
+ .page-height {
+   height:750px;
+ }
+
 /* This is for the header and navigation for the page */
-main {
-  height: 746px;
-}
 
 .header-main {
   background-color: black;
@@ -57,12 +58,26 @@ main {
   flex: 2;
 }
 
-
+@media (max-width: 660px) {
+  .main-content {
+    display: none;
+  }
+    .right {
+      margin-left: 20px;
+    }
+}
 /* Styleing for H2, H3, P */
+
+h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
 
 h2 {
   font-size: 35px;
   padding-bottom: 20px;
+  margin-top: 25px;
+  margin-left: 20px;
 }
 
 h3 {
@@ -83,6 +98,7 @@ p {
 .page-header {
   text-align: center;
 }
+
 /* This is the style for all of the quotes that break up the page */
 .quotes {
   border-top: 4px solid grey;
@@ -94,10 +110,90 @@ p {
   color: white;
   background-color: black;
 }
+
+@media (max-width: 660px) {
+  .quotes {
+    padding: 25px;
+  }
+}
+
+/* Current work Styles */
+
+#current-image {
+  width: 600px;
+}
+.current-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-content{
+  flex: 1;
+  margin: 100px 25px 100px 50px;
+  text-align: right;
+}
+
+.current-right {
+  flex: 2;
+  margin-right: 100px;
+}
+
+@media (max-width: 1000px) {
+  .current-container {
+    flex-direction: column;
+  }
+
+  #current-image {
+    width: 400px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .current-right {
+    margin: -7px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .current-image {
+    display: none;
+  }
+}
 /* Main project gallery */
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 /* About */
 
@@ -122,21 +218,109 @@ p {
   width: 350px;
 }
 
+@media (max-width: 1800px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .Luna-Jeff {
+    text-align: center;
+    margin: 18px;
+  }
+
+  .about-right {
+    flex: 1;
+    margin: 18px
+  }
+}
+
+/* Let's Connect Style */
+
+.text-center {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#connect {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid #ddd;
+  color: white;
+  border-radius: 5px; 
+}
+
+.form-inline button:hover {
+  background-color: grey;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.rule {
+  margin: auto;
+  border-top: 1px solid grey;
+  width: 75%;
+  margin-top: 150px;
+}
+
+.connect-page-height {
+  height:250px;
+}
+
 /* Footer Style */
   
 footer {
+  border-top: 4px solid grey;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 45px;
   color: black;
   font-size: 10px;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .footer-icon {
   width: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
   margin-left: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  footer {
+    margin-top: 75px;
+  }
 }

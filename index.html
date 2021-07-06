@@ -18,59 +18,79 @@
             </ul>
         </nav>
     </header>
-    <main class="flex-container">
+    <main class="flex-container page-height">
         <section class="main-content">  
             <img src="assets/images/Jeff_illustration.jpg" alt="Illustration of Jeff Cela">
         </section>
         <aside class="right">
             <h3 class="two-col"> Hi, I'm Jeff!</h3>
-            <h2> Curator of Design, Code, and Photography.</h2>
+            <h1> Curator of Design, Code, and Photography.</h1>
             <p> I am a Jersey Boy who has found a home in the south, 
                 graphic & web design is my specialty, people are my inspiration, 
                 and passion is my fuel. 
             </p>
         </aside>  
     </main>
-
+    <!-- Quote divider -->
     <section class="quotes">
         <p>"Success is never owned, it is rented and rent is due everyday." <i>R.Vaden</i></p>
     </section>
+    <!-- Current Dev Project -->
+    <article class="current-container">
+        <Section class="current-content">
+            <a href="https://jeffcela.github.io/01-HTML-CSS-and-Git-Code-Refactor/" target="_blank">
+            <img id="current-image" src="assets/images/Current_project.png" alt="Computer showing current development project">
+            </a>
+        </Section>
+        <aside class="current-right">
+            <h3>Horiseon Social Solutions</h3>
+            <p>This project was to take an exisiting webiste and update the HTML and CSS files to be seo friendly, meet accessibilty standards, and streamline the code withou altering the content or visual elements of the website.</p>
 
-    <article> 
-        <header>
-            <h2 id="portfolio">Portfolio</h2>
-        </header>
-        <menu>
-            <ul>
-                <li>All</li>
-                <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
-                <li>Web</li>
-                <!-- <button class="btn" onclick="filterSelection('nature')"> Nature</button> -->
-                <li>Graphic</li>
-                <li>Photography</li>
-            </ul>
-        </menu>
-       <!-- Portfolio Gallery Grid, this is a single image with text under it. You might want to only have the image and get the rollover effect for name -->
-        <div class="row">
-            <div class="column nature">
-                 <div class="content">
-                    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-                <h4>Mountains</h4>
-                <p>Lorem ipsum dolor..</p>
-            </div>
-         </div>
-
+        </aside>
 
     </article>
+    <!-- Quote divider -->
+    <section class="quotes">
+        <p>"Life is like riding a bicycle. To keep your balance, you must keep moving." <i>A.Einstein</i></p>
+    </section>
 
+
+    <article id="portfolio"> 
+        <div class="row"> 
+            <div class="column">
+              <img src="assets/images/CA_canal.jpg" alt="Canals in California" style="width:100%">
+              <img src="assets/images/MM_Logo.png" alt="Moscow Metro Logo Concept" style="width:100%">
+              <img src="assets/images/Wp-Food.jpg" alt="Foodwell Compost White Pgaes" style="width:100%">
+              <img src="assets/images/P5.jpg" alt="Portrait" style="width:100%">
+              <img src="assets/images/MM2.jpg" alt="Moscow Metro Map Concept" style="width:100%">
+              <img src="assets/images/face_cut.jpg" alt="Tree Logs" style="width:100%">
+              <img src="assets/images/Skilian-BC.jpg" alt="SK Business Card" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="assets/images/P1.jpg" alt="Rockstar" style="width:100%">
+              <img src="assets/images/Go-Nuts2.jpg" alt="GoNuts Trail Mix" style="width:100%">
+              <img src="assets/images/SF-Finger-SI.png" alt="Dual Identity" style="width:100%">
+              <img src="assets/images/S.killian-Logo.jpg" alt="Logo for S.Killian" style="width:100%">
+              <img src="assets/images/WP-Spread-2.jpg" alt="Foodwell Compost White Pgaes" style="width:100%">
+              <img src="assets/images/Omzana_Logo.png" alt="Omzana Logo" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="assets/images/summercats.png" alt="SummarCat Logo" style="width:100%">
+              <img src="assets/images/Luna_lovegood.jpg" alt="Luna Lovegood" style="width:100%">
+              <img src="assets/images/EB-1.jpg" alt="ElectroBikes" style="width:100%">
+              <img src="assets/images/P7.jpg" alt="Car wash Kid" style="width:100%">
+              <img src="assets/images/34.png" alt="34 by 37 logo" style="width:100%">
+              <img src="assets/images/fishing_spot.jpg" alt="fishing spot by the train tracks" style="width:100%">
+            </div>
+          </div>
+    </article>
+    <!-- Quote divider -->
     <section class="quotes">
         <p>"The greatest glory in living lies not in never falling, but in rising every time we fall" <i>N.Mandela</i></p>
     </section>
 
-    <article> 
-        <header id="#about">
-            <h2>About</h2>
-        </header>
+    <article id="about"> 
+
         <section class="about-container">
             <section class="Luna-Jeff">
                 <img id="about-image" src="assets/images/Luna_Jeff.jpg" alt="Jeff and Luna his dog">
@@ -99,21 +119,21 @@
             </section>
         </section>
     </article>
-
+    <!-- Quote divider -->
     <section class="quotes">
         <p>"Bowties are cool" <i>Doctor Who</i></p>
     </section>
 
-    <article>
-        <h1 id="connect"> Let's Connect</h1>
-
+    <article class="connect-page-height">
+        <h2 id="connect"> Let's Connect</h2>
         <form class="form-inline">
             <label for="name">Name:</label>
             <input type="name" id="name" placeholder="Enter name" name="name">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="Enter email" name="email">
             <button type="submit">Submit</button>
-          </form>
+        </form>
+        <p class="text-center">Looking forward to speaking with you!</p>
     </article>
 
     <footer>
