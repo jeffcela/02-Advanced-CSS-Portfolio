@@ -39,6 +39,9 @@ a, a:hover, a:visited, a:active {
   font-size: 15px;
 }
 
+li:hover {
+  text-decoration: white underline;
+}
 
 /* This starts the styling for the main elements, this is a 2 column flex box */
 
@@ -58,6 +61,10 @@ a, a:hover, a:visited, a:active {
   flex: 2;
 }
 
+img:hover {
+  filter: grayscale(100%);
+}
+
 @media (max-width: 660px) {
   .main-content {
     display: none;
@@ -66,7 +73,7 @@ a, a:hover, a:visited, a:active {
       margin-left: 20px;
     }
 }
-/* Styleing for H2, H3, P */
+/* Styling for H2, H3, P */
 
 h1 {
   font-size: 35px;
